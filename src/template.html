@@ -5,5 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TITLE</title>
   </head>
-  <body></body>
+  <body>
+
+    <header>
+      <h2 class="headerTitle">Where in the world?</h2>
+      <button type = "button" class="darkMode">Dark Mode</button>
+    </header>
+
+    <div class="mainContent">
+      <div class="filterBar">
+        <input type="text" name="searchCountry" id = "searchCountry" placeholder="Search for a country...">
+        <select name="continent" id="continent" class="selectContinent" aria-placeholder="Filter by region">
+        <option value="africa">Africa</option>
+        <option value="europe">Europe</option>
+        <option value="america">America</option>
+        <option value="asia">Asia</option>
+        <option value="oceania">Oceania</option>
+      </select>
+      </div>
+
+      <div class="firstRow">
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+      </div>
+
+      <div class="secondRow">
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+      </div>
+
+    </div>
+
+  </body>
 </html>

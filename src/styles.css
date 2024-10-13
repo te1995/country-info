@@ -1,1 +1,76 @@
 @import 'modern-normalize/modern-normalize.css';
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-shadow: 2px 2px 2px 2px rgb(235, 235, 235);
+}
+
+header > button {
+    border: none;
+    background-color: white;
+}
+
+.filterBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6vh;
+    margin-top: 3%;
+}
+
+#continent {
+    height: 80%;
+    border: none;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(226, 226, 226);
+}
+
+#searchCountry {
+    width: 30%;
+    height: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 3%;
+}
+
+.mainContent {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    flex-direction: column;
+    flex: 1;
+    gap: 3%;
+    padding-bottom: 3%;
+}
+
+.countryPreview {
+    flex: 1;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px rgb(226, 226, 226);
+}
+
+.firstRow {
+    flex: 1;
+    display: flex;
+    gap: 5%;
+}
+
+.secondRow {
+    flex: 1;
+    display: flex;
+    gap: 5%;
+}
