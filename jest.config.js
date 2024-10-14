@@ -1,9 +1,9 @@
 /** @type {import('jest').Config} */
 module.exports = {
   moduleNameMapper: {
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/__mocks__/fileMock.js',
-    '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js',
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+      "<rootDir>/__mocks__/fileMock.js",
+    "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js",
   },
 
   // Automatically clear mock calls, instances, contexts, and results before every test
@@ -13,21 +13,21 @@ module.exports = {
   collectCoverage: true,
 
   // The directory where Jest should output its coverage files
-  coverageDirectory: 'coverage',
+  coverageDirectory: "coverage",
 
   // The test environment that will be used for testing
-  testEnvironment: 'jest-environment-node',
+  testEnvironment: "jest-environment-node",
 
   // An array of file extensions your modules use
   moduleFileExtensions: [
-    'js',
-    'mjs',
-    'cjs',
-    'jsx',
-    'ts',
-    'tsx',
-    'json',
-    'node',
+    "js",
+    "mjs",
+    "cjs",
+    "jsx",
+    "ts",
+    "tsx",
+    "json",
+    "node",
   ],
 
   // Automatically restore mock state and implementation before every test

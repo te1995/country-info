@@ -2,19 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>TITLE</title>
+    <script defer="defer" src="main.js"></script>
   </head>
   <body>
     <header>
       <h2 class="headerTitle">Where in the world?</h2>
       <button type="button" class="darkMode">Dark Mode</button>
     </header>
-
     <div class="mainContent">
       <div class="filterBar">
         <input
-          type="text"
           name="searchCountry"
           id="searchCountry"
           placeholder="Search for a country..."
@@ -32,10 +31,22 @@
           <option value="oceania">Oceania</option>
         </select>
       </div>
-
-      <div class="firstRow"></div>
-
-
+      <div class="firstRow">
+        <div class="countryPreview">
+          <img src="../assets/de-flagge.jpg" />
+          <h1></h1>
+          <p></p>
+        </div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+      </div>
+      <div class="secondRow">
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+        <div class="countryPreview"></div>
+      </div>
     </div>
   </body>
 </html>
