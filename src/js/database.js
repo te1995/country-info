@@ -29,13 +29,18 @@ export function database() {
     }
   };
 
-  function getAllCountries() {
-    return Array.from(countries.values())
+  function getAllCountries(filter) {
+    let array = Array.from(countries.values());
+    if(filter === "all") {
+      return array;
+    } else {
+      return array.filter(item => item[0].region.toLowerCase() === filter.toLowerCase());
+    }
   }
 
   function clearDatabase() {
     countries.clear();
   }
 
-  return {addCountryAsync, getCountryByNameAsync, clearDatabase, getAllCountries} // TODO: Integrate get Countries
+  return {addCountryAsync, getCountryByNameAsync, clearDatabase, getAllCountries};
 }

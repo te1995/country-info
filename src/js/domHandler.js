@@ -4,6 +4,8 @@ export function domHandler() {
 
     const searchField = document.querySelector("#searchCountry");
     const divCards = document.querySelector(".firstRow");
+    const filterContinent = document.querySelector("#continent");
+    let filter = "all";
 
     let data = database();
 
@@ -12,13 +14,21 @@ export function domHandler() {
             e.preventDefault();
             let text = searchField.value;
             await data.addCountryAsync(text);
-            searchField.value = '';
+            searchField.value = "";
             functionDisplay();
         }
     });
 
+    filterContinent.addEventListener("change", (e) => {
+        e.preventDefault();
+        filter = filterContinent.value;
+        functionDisplay();
+    });
+
+
+
     const functionDisplay = function displayAllCountries() {
-        let arrayCountries = data.getAllCountries();
+        let arrayCountries = data.getAllCountries(filter);
         divCards.innerHTML = ``;
         arrayCountries.forEach(item => {
             let newDiv = document.createElement("div");
@@ -39,7 +49,7 @@ export function domHandler() {
 
     };
 
-    return {functionDisplay, functionSearchfield};
+    return {functionDisplay};
 
 }
 
